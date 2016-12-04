@@ -24,14 +24,6 @@ for (var i = 0; i < cards.length; i++) {
 }
 }
 
-function isMatch(cards){
-if (cards[0] === cards[1]){
-	alert("You found a match!");
-} else {
-	alert("Sorry, tryagain.");
-}
-
-}
 
 function isTwoCards() {
 cardsInPlay.push(this.getAttribute('data-card'));
@@ -44,6 +36,15 @@ if (cardsInPlay.length === 2){
 	isMatch(cardsInPlay);
 
 	cardsInPlay = [];
+}
+
+}
+
+function isMatch(cards){
+if (cards[0] === cards[1]){
+	alert("You found a match!");
+} else {
+	alert("Sorry, try again.");
 }
 
 }
