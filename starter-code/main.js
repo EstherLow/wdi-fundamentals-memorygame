@@ -13,7 +13,7 @@ var cardsInPlay = [];
 
 function createBoard(){
 for (var i = 0; i < cards.length; i++) {
-	var cardElment = document.createElement('div');
+	var cardElement = document.createElement('div');
 	cardElement.className = 'card';
 	cardElement.setAttribute('data-card', cards[i]);
 	cardElement.addEventListener('click', isTwoCards);
@@ -47,8 +47,6 @@ if (cardsInPlay.length === 2){
 }
 
 }
-
-
 
 
 createBoard();
